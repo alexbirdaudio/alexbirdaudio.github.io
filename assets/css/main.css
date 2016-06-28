@@ -3437,8 +3437,7 @@
 			}
 
 		}
-
-		/* Tiles */
+/* Tiles */
 
 			.tiles {
 				display: -moz-flex;
@@ -3708,3 +3707,25 @@
 						}
 
 				}
+				
+
+				/* Touch */
+
+					body.is-touch .image.thumb:before {
+						opacity: 0.5 !important;
+					}
+
+					body.is-touch .image.thumb:after {
+						display: none !important;
+					}
+
+					body.is-touch #header {
+						background-attachment: scroll;
+						background-size: auto, cover;
+					}
+
+					body.is-touch .poptrox-popup .nav-next,
+					body.is-touch .poptrox-popup .nav-previous,
+					body.is-touch .poptrox-popup .closer {
+						opacity: 1.0 !important;
+					}
